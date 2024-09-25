@@ -1,0 +1,29 @@
+Conexiunea cu github:
+
+
+
+(prima data)
+
+"git clone git@github....-skillbrain-momo.git" 
+
+"git remote -v" - vedem linkul de conectare la github
+
+"git status" - sa vedem care e statusul nostru
+
+
+
+PUSH (niciodata pe branch-ul main)
+
+git status
+
+git checkout main
+
+git checkout -b sprint7
+
+// lucru
+
+git add .
+
+git commit -m "Add readme.md"
+
+git push origin sprint7
