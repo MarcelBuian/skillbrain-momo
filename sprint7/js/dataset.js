@@ -12,7 +12,7 @@
 //   c. scrisa sub forma stiintifica
 //   d. Infinity, -Infinity
 //   e. NaN   (not a number)
-// 5. String (text)
+// 5. String (text) [typeof string]
 //  a. se afla intre ghilimele sau apostroafe
 
 //  Complexe: 
@@ -23,10 +23,18 @@
 // 9. Functii [typeof = function]
 
 
+const abc = 'Un text';
+
+console.log(typeof abc);
+
 
 // I.1
-let a = undefined;
-console.log(a, typeof a);
+let a;
+console.log(
+    a,
+    "\n",
+    typeof a,
+);
 
 // I.2
 let b = null;
@@ -97,7 +105,12 @@ console.log(text4);
 
 
 // 6. obiect
-const ob1 = { name: "SkillBrain", date: "octombrie 2024" }
+const ob1 = {
+    name: "SkillBrain",
+    date: "octombrie 2024",
+    is_open: true,
+    years: 3,
+}
 console.log(ob1, typeof ob1);
 
 // 7. liste [de dorit doar un tip de date inauntru.]

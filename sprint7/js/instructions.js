@@ -54,8 +54,27 @@ function get_pozitiv(n) {
 
 console.log(get_pozitiv(-5));
 
-// functii de tip arrow TODO!
+// functii de tip arrow!
 get_sum = (a, b) => a + b;
+
+// forma clasica
+function get_sum(a, b) {
+    return a + b;
+}
 
 
 // 3. Switch (todo)
+switch (expression) {
+    case x:
+        // code block
+        break;
+    case y:
+        // code block
+        break;
+    default:
+    // code block
+}
+
+
+
+
