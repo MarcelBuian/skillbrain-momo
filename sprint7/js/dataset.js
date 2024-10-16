@@ -14,6 +14,7 @@
 //   e. NaN   (not a number)
 // 5. String (text) [typeof string]
 //  a. se afla intre ghilimele sau apostroafe
+// 6. Symbol ()
 
 //  Complexe: 
 // 6. Obiect {  } typeof = object
