@@ -110,7 +110,18 @@ console.log("first = " + first);
 const cars10 = ["BMW", "Volvo", "Saab", "Ford"];
 console.log("cars10 before map: ", cars10);
 // map:
-const cars11 = cars10.map(function (value, index) {
+const callbackMap = function (value) {
     return value.toUpperCase();
-});
+}
+const cars11 = cars10.map(callbackMap);
 console.log("cars11 after map (cars10 with uppercase): ", cars11);
+
+// filter:
+// returneaza mereu un boolean!
+const callbackFilter = function (value) {
+    return value.length !== 4;
+}
+const cars12 = cars10.filter(callbackFilter);
+// O varianta mai scurta:
+// const cars12 = cars10.filter((value) => value.length !== 4);
+console.log("cars12 after filter (cars10 without cars that has 4 letters): ", cars12);
