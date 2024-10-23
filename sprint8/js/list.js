@@ -70,8 +70,14 @@ console.log("fruits3 after shift: ", fruits3);
 
 const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
 console.log("fruits4 before: ", fruits4);
-fruits4.splice(2, 1);
+const index = fruits4.indexOf("Apple!");
+
+const rez = fruits4.splice(index, 1);
 console.log("fruits4 after splice (2,1): ", fruits4);
+console.log("rez dupa splice: ", rez);
+console.log("index: ", index);
+
+return;
 
 
 
