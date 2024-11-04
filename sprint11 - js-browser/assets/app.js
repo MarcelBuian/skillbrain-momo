@@ -1,3 +1,43 @@
+
+const buttonClicked = (e) => {
+    console.log(e.target);
+
+    let elementId;
+
+    if (e.target.tagName === 'STRONG') {
+        elementId = e.target.parentElement.id;
+    } else {
+        elementId = e.target.id;
+    }
+
+    if (elementId === "button1") {
+        alert('Azi e luni!');
+    } else if (elementId === 'button2') {
+        alert('Maine a marti!');
+    }
+}
+
+const checkEnabledForTarget = (target) => {
+
+    let enabled = target.value !== '';
+
+    document.getElementById('checkboxInput').checked = enabled;
+
+
+    document.getElementById('submitButton').disabled = !enabled;
+}
+
+const checkEnabledByEvent = (e) => {
+
+    checkEnabledForTarget(e.target);
+}
+
+const myElementClicked = (e) => {
+    console.log("Inainte de prevent default");
+    e.preventDefault();
+    console.log("Dupa prevent default");
+}
+
 const functionWhenDOMLoaded = (event) => {
     console.log("1. Hello, Skillbrain inceput de app.js");
     // document.getElementById("demo").innerHTML = "My First JavaScript";
@@ -7,6 +47,18 @@ const functionWhenDOMLoaded = (event) => {
     document.getElementById('buttonDivizibilCu10').addEventListener('click', functionEsteDivCuZece);
     // E acelasi lucru
     // document.getElementById('buttonDivizibilCu10').onclick = functionEsteDivCuZece;
+
+    document.getElementById('button1').onclick = buttonClicked;
+    document.getElementById('button2').onclick = buttonClicked;
+    document.getElementById('myElement').onclick = myElementClicked;
+    document.querySelector('input[type="submit"]').onclick = (event) => {
+        event.preventDefault();
+        console.log("Submit has been clicked!");
+    }
+    document.getElementById('fname').onkeyup = checkEnabledByEvent;
+    checkEnabledForTarget(document.getElementById('fname'));
+
+    document.getElementById('checkboxInput').onclick = (e) => e.preventDefault();
 }
 
 const setDemoContent = (content = "My First JavaScript") => {
