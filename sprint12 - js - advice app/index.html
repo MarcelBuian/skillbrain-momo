@@ -6,10 +6,23 @@
     <meta charset='utf-8' />
     <script src='assets/voicerss-tts.min 3.js'></script>
     <script src="assets/app.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    >
 </head>
 
 <body>
-    <button id="speak-button">Speak!</button>
+    <textarea 
+        class="textarea is-primary" 
+        placeholder="Insert text to listen" 
+        rows="10" 
+        id="speak-text"
+    ></textarea>
+    <button id="joke-button" class="button is-primary">Tell a Joke</button>
+    <button id="speak-button" class="button is-info">Listen!</button>
+    
+
 </body>
 
 </html>
