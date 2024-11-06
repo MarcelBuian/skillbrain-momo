@@ -12,10 +12,16 @@ const speak = (text) => {
     });
 }
 
-const functionWhenDOMLoaded = () => {
-    const el = document.getElementById('speak-button');
+const speakOnClick ( const el = document.getElementById('speak-button');
 
-    el.onclick = () => speak("Hello World");
+const text = 
+document.getElementById("speak-text").value;
+console.log(text)
+)
+
+const functionWhenDOMLoaded = () => {
+   
+    el.onclick = () => speak(text);
 }
 
 document.addEventListener("DOMContentLoaded", functionWhenDOMLoaded);
