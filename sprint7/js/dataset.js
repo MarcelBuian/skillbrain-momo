@@ -22,6 +22,7 @@
 // 8. Obiecte instantiabile [care au clasa]
 //   BigInt = typeof = bigint
 // 9. Functii [typeof = function]
+// 10. Promise
 
 
 const abc = 'Un text';
