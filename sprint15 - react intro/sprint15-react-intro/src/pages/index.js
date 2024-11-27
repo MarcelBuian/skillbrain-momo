@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
+import swal from 'sweetalert';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,6 +16,7 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  swal("Hello world!");
   return (
     <>
       <Head>
@@ -38,6 +40,8 @@ export default function Home() {
           <ol>
             <li>
               Get started by editing <code>src/pages/index.js</code>.
+              Salut, SkillBrain!
+              In timp real
             </li>
             <li>Save and see your changes instantly.</li>
           </ol>
