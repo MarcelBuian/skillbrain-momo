@@ -1,0 +1,21 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  padding: 70px;
+  max-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.app-content {
+  flex: 1;
+  display: grid;
+  grid-template-rows: max-content auto;
+}
+
+.app-content h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  margin: 0 0 50px;
+}
